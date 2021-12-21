@@ -1,13 +1,50 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.email-container {
+  max-width: 70%;
+}
+
+.inner-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.left-info {
+  display: flex;
+  margin-right: 0.5rem;
+}
+
+.email-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-header h5 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding-top: 0.4rem;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+input[type="checkbox"] {
+  margin: 0 0.5rem 0 0;
+}
+
+hr,
+.fa-thumb-tack {
+  color: gray;
 }
