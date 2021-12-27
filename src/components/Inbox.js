@@ -1,6 +1,7 @@
 import React from "react";
 
 const Inbox = ({ email }) => {
+  const {sender, subject, date, message} = email
   return (
     <div className="wrapper">
       <div className="email-container">
@@ -12,11 +13,11 @@ const Inbox = ({ email }) => {
           </div>
           <div className="right-info">
             <div className="email-header">
-              <h5>{email.sender}</h5>
-              <h5>{email.subject}</h5>
-              <h5>{email.date}</h5>
+              <h5>{sender}</h5>
+              <h5>{subject}</h5>
+              <h5>{date}</h5>
             </div>
-            <p>{email.message}</p>
+            <p>{message}</p>
           </div>
         </div>
         <hr />
